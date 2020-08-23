@@ -16,6 +16,7 @@ class Anagram
     if word_given == anagram_word
       result << element
     end
+  end
     result
   end
 

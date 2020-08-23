@@ -9,6 +9,14 @@ class Anagram
   end
   
   def match(anagrams_array)
+    result = []
+    word_given = word.downcase.sort
+    anagrams_array.each do |element|
+     anagram_word = element.downcase.sort
+    if word_given == anagram_word
+      result << element
+    end
+    result
   end
 
 end

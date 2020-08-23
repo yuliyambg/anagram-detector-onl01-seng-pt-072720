@@ -10,9 +10,9 @@ class Anagram
   
   def match(anagrams_array)
     result = []
-    word_given = word.downcase
+    word_given = word.downcase.split("")
     anagrams_array.each do |element|
-     anagram_word = element.downcase
+     anagram_word = element.downcase.split("")
     if word_given.sort == anagram_word.sort
       result << element
     end
